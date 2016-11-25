@@ -14,6 +14,7 @@ function cseu_features_permissions_user_default_permissions() {
   $permissions['administer newsletters'] = array(
     'name' => 'administer newsletters',
     'roles' => array(
+      'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
     'module' => 'simplenews',
