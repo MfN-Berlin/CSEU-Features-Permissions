@@ -10,6 +10,34 @@
 function cseu_features_permissions_user_default_permissions() {
   $permissions = array();
 
+  // Exported permission: 'administer newsletters'.
+  $permissions['administer newsletters'] = array(
+    'name' => 'administer newsletters',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'simplenews',
+  );
+
+  // Exported permission: 'administer simplenews settings'.
+  $permissions['administer simplenews settings'] = array(
+    'name' => 'administer simplenews settings',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'simplenews',
+  );
+
+  // Exported permission: 'administer simplenews subscriptions'.
+  $permissions['administer simplenews subscriptions'] = array(
+    'name' => 'administer simplenews subscriptions',
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'simplenews',
+  );
+
   // Exported permission: 'create article content'.
   $permissions['create article content'] = array(
     'name' => 'create article content',
@@ -433,6 +461,26 @@ function cseu_features_permissions_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: 'send newsletter'.
+  $permissions['send newsletter'] = array(
+    'name' => 'send newsletter',
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'simplenews',
+  );
+
+  // Exported permission: 'subscribe to newsletters'.
+  $permissions['subscribe to newsletters'] = array(
+    'name' => 'subscribe to newsletters',
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'simplenews',
   );
 
   // Exported permission: 'use text format filtered_html'.
