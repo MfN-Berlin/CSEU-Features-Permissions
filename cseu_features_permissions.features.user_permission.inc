@@ -14,6 +14,7 @@ function cseu_features_permissions_user_default_permissions() {
   $permissions['administer newsletters'] = array(
     'name' => 'administer newsletters',
     'roles' => array(
+      'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
     'module' => 'simplenews',
@@ -54,6 +55,15 @@ function cseu_features_permissions_user_default_permissions() {
     'roles' => array(
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'create cseu_event content'.
+  $permissions['create cseu_event content'] = array(
+    'name' => 'create cseu_event content',
+    'roles' => array(
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'node',
   );
@@ -120,6 +130,16 @@ function cseu_features_permissions_user_default_permissions() {
   // Exported permission: 'delete any cseu_deliverable content'.
   $permissions['delete any cseu_deliverable content'] = array(
     'name' => 'delete any cseu_deliverable content',
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete any cseu_event content'.
+  $permissions['delete any cseu_event content'] = array(
+    'name' => 'delete any cseu_event content',
     'roles' => array(
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
@@ -196,6 +216,16 @@ function cseu_features_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete own cseu_event content'.
+  $permissions['delete own cseu_event content'] = array(
+    'name' => 'delete own cseu_event content',
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete own cseu_institution content'.
   $permissions['delete own cseu_institution content'] = array(
     'name' => 'delete own cseu_institution content',
@@ -259,6 +289,16 @@ function cseu_features_permissions_user_default_permissions() {
   // Exported permission: 'edit any cseu_deliverable content'.
   $permissions['edit any cseu_deliverable content'] = array(
     'name' => 'edit any cseu_deliverable content',
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit any cseu_event content'.
+  $permissions['edit any cseu_event content'] = array(
+    'name' => 'edit any cseu_event content',
     'roles' => array(
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
@@ -371,6 +411,15 @@ function cseu_features_permissions_user_default_permissions() {
     'roles' => array(
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit own cseu_event content'.
+  $permissions['edit own cseu_event content'] = array(
+    'name' => 'edit own cseu_event content',
+    'roles' => array(
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'node',
   );
