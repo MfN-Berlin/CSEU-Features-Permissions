@@ -10,6 +10,17 @@
 function cseu_features_permissions_user_default_permissions() {
   $permissions = array();
 
+  // Exported permission: 'access administration menu'.
+  $permissions['access administration menu'] = array(
+    'name' => 'access administration menu',
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'admin_menu',
+  );
+
   // Exported permission: 'administer newsletters'.
   $permissions['administer newsletters'] = array(
     'name' => 'administer newsletters',
