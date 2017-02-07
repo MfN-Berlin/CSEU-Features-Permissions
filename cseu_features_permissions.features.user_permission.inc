@@ -21,6 +21,17 @@ function cseu_features_permissions_user_default_permissions() {
     'module' => 'admin_menu',
   );
 
+  // Exported permission: 'access contextual links'.
+  $permissions['access contextual links'] = array(
+    'name' => 'access contextual links',
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'contextual',
+  );
+
   // Exported permission: 'administer newsletters'.
   $permissions['administer newsletters'] = array(
     'name' => 'administer newsletters',
@@ -66,6 +77,17 @@ function cseu_features_permissions_user_default_permissions() {
     'roles' => array(
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'create cseu_document content'.
+  $permissions['create cseu_document content'] = array(
+    'name' => 'create cseu_document content',
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'node',
   );
@@ -141,6 +163,16 @@ function cseu_features_permissions_user_default_permissions() {
   // Exported permission: 'delete any cseu_deliverable content'.
   $permissions['delete any cseu_deliverable content'] = array(
     'name' => 'delete any cseu_deliverable content',
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete any cseu_document content'.
+  $permissions['delete any cseu_document content'] = array(
+    'name' => 'delete any cseu_document content',
     'roles' => array(
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
@@ -227,6 +259,17 @@ function cseu_features_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete own cseu_document content'.
+  $permissions['delete own cseu_document content'] = array(
+    'name' => 'delete own cseu_document content',
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete own cseu_event content'.
   $permissions['delete own cseu_event content'] = array(
     'name' => 'delete own cseu_event content',
@@ -300,6 +343,16 @@ function cseu_features_permissions_user_default_permissions() {
   // Exported permission: 'edit any cseu_deliverable content'.
   $permissions['edit any cseu_deliverable content'] = array(
     'name' => 'edit any cseu_deliverable content',
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit any cseu_document content'.
+  $permissions['edit any cseu_document content'] = array(
+    'name' => 'edit any cseu_document content',
     'roles' => array(
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
@@ -422,6 +475,17 @@ function cseu_features_permissions_user_default_permissions() {
     'roles' => array(
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit own cseu_document content'.
+  $permissions['edit own cseu_document content'] = array(
+    'name' => 'edit own cseu_document content',
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'node',
   );
@@ -639,6 +703,17 @@ function cseu_features_permissions_user_default_permissions() {
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'profile2',
+  );
+
+  // Exported permission: 'view the administration theme'.
+  $permissions['view the administration theme'] = array(
+    'name' => 'view the administration theme',
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'system',
   );
 
   return $permissions;
