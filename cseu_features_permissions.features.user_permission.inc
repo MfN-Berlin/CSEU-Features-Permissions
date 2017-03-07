@@ -82,6 +82,24 @@ function cseu_features_permissions_user_default_permissions() {
     'module' => 'simplenews',
   );
 
+  // Exported permission: 'administer user configuration'.
+  $permissions['administer user configuration'] = array(
+    'name' => 'administer user configuration',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'cseu_permissions',
+  );
+
+  // Exported permission: 'administer user permissions'.
+  $permissions['administer user permissions'] = array(
+    'name' => 'administer user permissions',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'cseu_permissions',
+  );
+
   // Exported permission: 'administer userprotect'.
   $permissions['administer userprotect'] = array(
     'name' => 'administer userprotect',
