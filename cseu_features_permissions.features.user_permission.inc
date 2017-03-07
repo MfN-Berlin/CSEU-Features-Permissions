@@ -32,6 +32,17 @@ function cseu_features_permissions_user_default_permissions() {
     'module' => 'contextual',
   );
 
+  // Exported permission: 'access user profiles'.
+  $permissions['access user profiles'] = array(
+    'name' => 'access user profiles',
+    'roles' => array(
+      'Manager' => 'Manager',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'user',
+  );
+
   // Exported permission: 'administer newsletters'.
   $permissions['administer newsletters'] = array(
     'name' => 'administer newsletters',
@@ -40,6 +51,16 @@ function cseu_features_permissions_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'simplenews',
+  );
+
+  // Exported permission: 'administer permissions'.
+  $permissions['administer permissions'] = array(
+    'name' => 'administer permissions',
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'user',
   );
 
   // Exported permission: 'administer simplenews settings'.
@@ -59,6 +80,56 @@ function cseu_features_permissions_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'simplenews',
+  );
+
+  // Exported permission: 'administer userprotect'.
+  $permissions['administer userprotect'] = array(
+    'name' => 'administer userprotect',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'userprotect',
+  );
+
+  // Exported permission: 'administer users'.
+  $permissions['administer users'] = array(
+    'name' => 'administer users',
+    'roles' => array(
+      'Manager' => 'Manager',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'user',
+  );
+
+  // Exported permission: 'change own e-mail'.
+  $permissions['change own e-mail'] = array(
+    'name' => 'change own e-mail',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'userprotect',
+  );
+
+  // Exported permission: 'change own openid'.
+  $permissions['change own openid'] = array(
+    'name' => 'change own openid',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'userprotect',
+  );
+
+  // Exported permission: 'change own password'.
+  $permissions['change own password'] = array(
+    'name' => 'change own password',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'userprotect',
   );
 
   // Exported permission: 'create article content'.
@@ -461,6 +532,16 @@ function cseu_features_permissions_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: 'edit own account'.
+  $permissions['edit own account'] = array(
+    'name' => 'edit own account',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'userprotect',
   );
 
   // Exported permission: 'edit own article content'.
