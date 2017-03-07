@@ -284,6 +284,7 @@ function cseu_features_permissions_user_default_permissions() {
   $permissions['delete own cseu_institution content'] = array(
     'name' => 'delete own cseu_institution content',
     'roles' => array(
+      'Manager' => 'Manager',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -374,6 +375,7 @@ function cseu_features_permissions_user_default_permissions() {
   $permissions['edit any cseu_institution content'] = array(
     'name' => 'edit any cseu_institution content',
     'roles' => array(
+      'Manager' => 'Manager',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -394,6 +396,7 @@ function cseu_features_permissions_user_default_permissions() {
   $permissions['edit any cseu_profile_groups_interest profile'] = array(
     'name' => 'edit any cseu_profile_groups_interest profile',
     'roles' => array(
+      'Manager' => 'Manager',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -413,6 +416,7 @@ function cseu_features_permissions_user_default_permissions() {
   $permissions['edit any cseu_profile_tasks_interest profile'] = array(
     'name' => 'edit any cseu_profile_tasks_interest profile',
     'roles' => array(
+      'Manager' => 'Manager',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -642,6 +646,7 @@ function cseu_features_permissions_user_default_permissions() {
   $permissions['view any cseu_profile_groups_interest profile'] = array(
     'name' => 'view any cseu_profile_groups_interest profile',
     'roles' => array(
+      'Manager' => 'Manager',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -652,6 +657,7 @@ function cseu_features_permissions_user_default_permissions() {
   $permissions['view any cseu_profile_personal profile'] = array(
     'name' => 'view any cseu_profile_personal profile',
     'roles' => array(
+      'Manager' => 'Manager',
       'Site Administrator' => 'Site Administrator',
     ),
     'module' => 'profile2',
@@ -661,6 +667,7 @@ function cseu_features_permissions_user_default_permissions() {
   $permissions['view any cseu_profile_tasks_interest profile'] = array(
     'name' => 'view any cseu_profile_tasks_interest profile',
     'roles' => array(
+      'Manager' => 'Manager',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
