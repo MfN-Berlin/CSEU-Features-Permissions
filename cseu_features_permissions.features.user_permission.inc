@@ -63,6 +63,15 @@ function cseu_features_permissions_user_default_permissions() {
     'module' => 'user',
   );
 
+  // Exported permission: 'administer search'.
+  $permissions['administer search'] = array(
+    'name' => 'administer search',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'search',
+  );
+
   // Exported permission: 'administer simplenews settings'.
   $permissions['administer simplenews settings'] = array(
     'name' => 'administer simplenews settings',
@@ -690,6 +699,17 @@ function cseu_features_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'search content'.
+  $permissions['search content'] = array(
+    'name' => 'search content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'search',
+  );
+
   // Exported permission: 'send newsletter'.
   $permissions['send newsletter'] = array(
     'name' => 'send newsletter',
@@ -708,6 +728,16 @@ function cseu_features_permissions_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'simplenews',
+  );
+
+  // Exported permission: 'use advanced search'.
+  $permissions['use advanced search'] = array(
+    'name' => 'use advanced search',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'search',
   );
 
   // Exported permission: 'use text format filtered_html'.
