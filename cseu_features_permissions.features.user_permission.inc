@@ -208,6 +208,17 @@ function cseu_features_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'create cseu_slideshow_entry content'.
+  $permissions['create cseu_slideshow_entry content'] = array(
+    'name' => 'create cseu_slideshow_entry content',
+    'roles' => array(
+      'Manager' => 'Manager',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'create cseu_task content'.
   $permissions['create cseu_task content'] = array(
     'name' => 'create cseu_task content',
@@ -291,6 +302,17 @@ function cseu_features_permissions_user_default_permissions() {
   // Exported permission: 'delete any cseu_institution content'.
   $permissions['delete any cseu_institution content'] = array(
     'name' => 'delete any cseu_institution content',
+    'roles' => array(
+      'Manager' => 'Manager',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete any cseu_slideshow_entry content'.
+  $permissions['delete any cseu_slideshow_entry content'] = array(
+    'name' => 'delete any cseu_slideshow_entry content',
     'roles' => array(
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
@@ -381,6 +403,17 @@ function cseu_features_permissions_user_default_permissions() {
   // Exported permission: 'delete own cseu_institution content'.
   $permissions['delete own cseu_institution content'] = array(
     'name' => 'delete own cseu_institution content',
+    'roles' => array(
+      'Manager' => 'Manager',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete own cseu_slideshow_entry content'.
+  $permissions['delete own cseu_slideshow_entry content'] = array(
+    'name' => 'delete own cseu_slideshow_entry content',
     'roles' => array(
       'Manager' => 'Manager',
       'Site Administrator' => 'Site Administrator',
@@ -521,6 +554,17 @@ function cseu_features_permissions_user_default_permissions() {
     'module' => 'profile2',
   );
 
+  // Exported permission: 'edit any cseu_slideshow_entry content'.
+  $permissions['edit any cseu_slideshow_entry content'] = array(
+    'name' => 'edit any cseu_slideshow_entry content',
+    'roles' => array(
+      'Manager' => 'Manager',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit any cseu_task content'.
   $permissions['edit any cseu_task content'] = array(
     'name' => 'edit any cseu_task content',
@@ -657,6 +701,17 @@ function cseu_features_permissions_user_default_permissions() {
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'profile2',
+  );
+
+  // Exported permission: 'edit own cseu_slideshow_entry content'.
+  $permissions['edit own cseu_slideshow_entry content'] = array(
+    'name' => 'edit own cseu_slideshow_entry content',
+    'roles' => array(
+      'Manager' => 'Manager',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: 'edit own cseu_task content'.
