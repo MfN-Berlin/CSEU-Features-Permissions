@@ -43,16 +43,6 @@ function cseu_features_permissions_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: 'administer newsletters'.
-  $permissions['administer newsletters'] = array(
-    'name' => 'administer newsletters',
-    'roles' => array(
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'simplenews',
-  );
-
   // Exported permission: 'administer permissions'.
   $permissions['administer permissions'] = array(
     'name' => 'administer permissions',
@@ -70,25 +60,6 @@ function cseu_features_permissions_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'search',
-  );
-
-  // Exported permission: 'administer simplenews settings'.
-  $permissions['administer simplenews settings'] = array(
-    'name' => 'administer simplenews settings',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'simplenews',
-  );
-
-  // Exported permission: 'administer simplenews subscriptions'.
-  $permissions['administer simplenews subscriptions'] = array(
-    'name' => 'administer simplenews subscriptions',
-    'roles' => array(
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'simplenews',
   );
 
   // Exported permission: 'administer user configuration'.
@@ -179,17 +150,6 @@ function cseu_features_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'create cseu_document content'.
-  $permissions['create cseu_document content'] = array(
-    'name' => 'create cseu_document content',
-    'roles' => array(
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-      'authenticated user' => 'authenticated user',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: 'create cseu_event content'.
   $permissions['create cseu_event content'] = array(
     'name' => 'create cseu_event content',
@@ -249,16 +209,6 @@ function cseu_features_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'create simplenews content'.
-  $permissions['create simplenews content'] = array(
-    'name' => 'create simplenews content',
-    'roles' => array(
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: 'delete any article content'.
   $permissions['delete any article content'] = array(
     'name' => 'delete any article content',
@@ -272,16 +222,6 @@ function cseu_features_permissions_user_default_permissions() {
   // Exported permission: 'delete any cseu_deliverable content'.
   $permissions['delete any cseu_deliverable content'] = array(
     'name' => 'delete any cseu_deliverable content',
-    'roles' => array(
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete any cseu_document content'.
-  $permissions['delete any cseu_document content'] = array(
-    'name' => 'delete any cseu_document content',
     'roles' => array(
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
@@ -349,16 +289,6 @@ function cseu_features_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'delete any simplenews content'.
-  $permissions['delete any simplenews content'] = array(
-    'name' => 'delete any simplenews content',
-    'roles' => array(
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: 'delete own article content'.
   $permissions['delete own article content'] = array(
     'name' => 'delete own article content',
@@ -375,17 +305,6 @@ function cseu_features_permissions_user_default_permissions() {
     'roles' => array(
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete own cseu_document content'.
-  $permissions['delete own cseu_document content'] = array(
-    'name' => 'delete own cseu_document content',
-    'roles' => array(
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-      'authenticated user' => 'authenticated user',
     ),
     'module' => 'node',
   );
@@ -452,16 +371,6 @@ function cseu_features_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'delete own simplenews content'.
-  $permissions['delete own simplenews content'] = array(
-    'name' => 'delete own simplenews content',
-    'roles' => array(
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: 'edit any article content'.
   $permissions['edit any article content'] = array(
     'name' => 'edit any article content',
@@ -475,16 +384,6 @@ function cseu_features_permissions_user_default_permissions() {
   // Exported permission: 'edit any cseu_deliverable content'.
   $permissions['edit any cseu_deliverable content'] = array(
     'name' => 'edit any cseu_deliverable content',
-    'roles' => array(
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit any cseu_document content'.
-  $permissions['edit any cseu_document content'] = array(
-    'name' => 'edit any cseu_document content',
     'roles' => array(
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
@@ -595,16 +494,6 @@ function cseu_features_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'edit any simplenews content'.
-  $permissions['edit any simplenews content'] = array(
-    'name' => 'edit any simplenews content',
-    'roles' => array(
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: 'edit own account'.
   $permissions['edit own account'] = array(
     'name' => 'edit own account',
@@ -631,17 +520,6 @@ function cseu_features_permissions_user_default_permissions() {
     'roles' => array(
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit own cseu_document content'.
-  $permissions['edit own cseu_document content'] = array(
-    'name' => 'edit own cseu_document content',
-    'roles' => array(
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-      'authenticated user' => 'authenticated user',
     ),
     'module' => 'node',
   );
@@ -744,16 +622,6 @@ function cseu_features_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'edit own simplenews content'.
-  $permissions['edit own simplenews content'] = array(
-    'name' => 'edit own simplenews content',
-    'roles' => array(
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: 'search content'.
   $permissions['search content'] = array(
     'name' => 'search content',
@@ -763,26 +631,6 @@ function cseu_features_permissions_user_default_permissions() {
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'search',
-  );
-
-  // Exported permission: 'send newsletter'.
-  $permissions['send newsletter'] = array(
-    'name' => 'send newsletter',
-    'roles' => array(
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'simplenews',
-  );
-
-  // Exported permission: 'subscribe to newsletters'.
-  $permissions['subscribe to newsletters'] = array(
-    'name' => 'subscribe to newsletters',
-    'roles' => array(
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'simplenews',
   );
 
   // Exported permission: 'use advanced search'.
