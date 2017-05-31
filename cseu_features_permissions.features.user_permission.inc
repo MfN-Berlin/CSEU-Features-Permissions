@@ -69,6 +69,8 @@ function cseu_features_permissions_user_default_permissions() {
       'Manager' => 'Manager',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'user',
   );
@@ -821,6 +823,8 @@ function cseu_features_permissions_user_default_permissions() {
       'Manager' => 'Manager',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'profile2',
   );
@@ -831,6 +835,8 @@ function cseu_features_permissions_user_default_permissions() {
     'roles' => array(
       'Manager' => 'Manager',
       'Site Administrator' => 'Site Administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'profile2',
   );
