@@ -221,6 +221,17 @@ function cseu_features_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'create cseu_blog_entry content'.
+  $permissions['create cseu_blog_entry content'] = array(
+    'name' => 'create cseu_blog_entry content',
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'create cseu_deliverable content'.
   $permissions['create cseu_deliverable content'] = array(
     'name' => 'create cseu_deliverable content',
@@ -320,6 +331,16 @@ function cseu_features_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete any cseu_blog_entry content'.
+  $permissions['delete any cseu_blog_entry content'] = array(
+    'name' => 'delete any cseu_blog_entry content',
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete any cseu_deliverable content'.
   $permissions['delete any cseu_deliverable content'] = array(
     'name' => 'delete any cseu_deliverable content',
@@ -406,6 +427,17 @@ function cseu_features_permissions_user_default_permissions() {
     'roles' => array(
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete own cseu_blog_entry content'.
+  $permissions['delete own cseu_blog_entry content'] = array(
+    'name' => 'delete own cseu_blog_entry content',
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'node',
   );
@@ -524,6 +556,16 @@ function cseu_features_permissions_user_default_permissions() {
   // Exported permission: 'edit any article content'.
   $permissions['edit any article content'] = array(
     'name' => 'edit any article content',
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit any cseu_blog_entry content'.
+  $permissions['edit any cseu_blog_entry content'] = array(
+    'name' => 'edit any cseu_blog_entry content',
     'roles' => array(
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
@@ -670,6 +712,17 @@ function cseu_features_permissions_user_default_permissions() {
     'roles' => array(
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit own cseu_blog_entry content'.
+  $permissions['edit own cseu_blog_entry content'] = array(
+    'name' => 'edit own cseu_blog_entry content',
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'node',
   );
