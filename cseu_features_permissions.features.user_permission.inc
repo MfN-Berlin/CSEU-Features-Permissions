@@ -63,6 +63,17 @@ function cseu_features_permissions_user_default_permissions() {
     'module' => 'contextual',
   );
 
+  // Exported permission: 'access media browser'.
+  $permissions['access media browser'] = array(
+    'name' => 'access media browser',
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'media',
+  );
+
   // Exported permission: 'access own webform results'.
   $permissions['access own webform results'] = array(
     'name' => 'access own webform results',
@@ -96,6 +107,15 @@ function cseu_features_permissions_user_default_permissions() {
     'module' => 'user',
   );
 
+  // Exported permission: 'add media from remote sources'.
+  $permissions['add media from remote sources'] = array(
+    'name' => 'add media from remote sources',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'media_internet',
+  );
+
   // Exported permission: 'administer content types'.
   $permissions['administer content types'] = array(
     'name' => 'administer content types',
@@ -103,6 +123,24 @@ function cseu_features_permissions_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: 'administer media browser'.
+  $permissions['administer media browser'] = array(
+    'name' => 'administer media browser',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'media',
+  );
+
+  // Exported permission: 'administer media oembed'.
+  $permissions['administer media oembed'] = array(
+    'name' => 'administer media oembed',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'media_oembed',
   );
 
   // Exported permission: 'administer nodes'.
@@ -903,6 +941,17 @@ function cseu_features_permissions_user_default_permissions() {
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'search',
+  );
+
+  // Exported permission: 'use media wysiwyg'.
+  $permissions['use media wysiwyg'] = array(
+    'name' => 'use media wysiwyg',
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'media_wysiwyg',
   );
 
   // Exported permission: 'use text format filtered_html'.
